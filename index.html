@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zev Hotel | Welcome</title>
+    <script src="https://kit.fontawesome.com/d2a386da24.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/fedb1cf925.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="css/mobile.css">
+    <link rel="stylesheet" href="/css/formbooking.css">
+</head>
+
+<body>
+    <header>
+        <nav id="nav-bar">
+            <div class="container">     
+
+                <h1 class="logo"><a href="index.html"><span style="color:aqua; font-size: 2.6rem;">Zev</span> Hotel</a></h1>
+                <ul>
+                    <li><a class="current" href="index.html">Home</a></li>
+                    <li><a href="#about-info">About</a></li>
+                    <li><a href="#contact-form">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <!-- Home -->
+    <div id="showcase">
+        <div class="container">
+            <div class="showcase-content">
+                <h1> <span class="primary-text">Enjoy</span> your Stay</h1>
+                <p class="lead-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolorum placeat
+                    cumque fugiat debitis corporis.</p>
+                <button class="btn book-button">Book Now</button>
+            </div> 
+        </div>
+    </div>
+
+    <!-- Booking -->
+        <div class="form-booking">
+            <span class="close-form"><i class="fa-solid fa-xmark"></i></span>
+            <form>
+                <!--  General -->
+                <div class="form-group">
+                <div>
+                    <h2 class="heading">Booking & contact</h2> 
+                </div>
+                <div class="controls">
+                    <input type="text" id="name" class="floatLabel" name="name">
+                    <label for="name">Name</label>
+                </div>
+                    
+                <div class="controls">
+                    <input type="tel" id="phone" class="floatLabel" name="phone">
+                    <label for="phone">Phone</label>
+                </div>
+                    
+                    <div class="col-1-3">
+                        <div class="controls">
+                            <input type="text" id="post-code" class="floatLabel" name="post-code">
+                            <label for="post-code">Post Code</label>
+                        </div>         
+                    </div>
+
+        
+                </div>
+                <!--  Details -->
+                <div class="form-group">
+                    <div class="grid">
+                        <div class="">
+                            <div class="controls">
+                                <input type="date" id="arrive" class="floatLabel" name="arrive" value="<?php echo date('Y-m-d'); ?>">
+                                <label for="arrive" class="label-date"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Arrive</label>
+                            </div>      
+                        </div>
+                        <div class="">
+                            <div class="controls">
+                                <input type="date" id="depart" class="floatLabel" name="depart" value="<?php echo date('Y-m-d'); ?>" />
+                                <label for="depart" class="label-date"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Depart</label>
+                            </div>      
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="">
+                            <div class="controls">
+
+                            <select class="floatLabel">
+                                <option value="blank"></option>
+                                <option value="1">1</option>
+                                <option value="2" selected>2</option>
+                                <option value="3">3</option>
+                            </select>
+                            <label for="fruit"><i class="fa fa-male"></i>&nbsp;&nbsp;People</label>
+                        </div>      
+                    </div>
+                <div class="">
+                    <div class="controls">
+                        <select class="floatLabel">
+                            <option value="blank"></option>
+                            <option value="deluxe" selected>With Bathroom</option>
+                            <option value="Zuri-zimmer">Without Bathroom</option>
+                        </select>
+                        <label for="fruit">Room</label>
+                    </div>     
+                </div>
+            
+                <div class="">
+                    <div class="controls">
+                        <select class="floatLabel">
+                            <option value="blank"></option>
+                            <option value="single-bed">Zweibett</option>
+                            <option value="double-bed" selected>Doppelbett</option>
+                        </select>
+                        <label for="fruit">Bedding</label>
+                    </div>     
+                </div>
+                    
+                </div>
+                    <div class="comments">
+                        <p class="info-text">Please describe your needs e.g. Extra beds, children's cots</p>
+                        <br>
+                        <input type="text" placeholder="Type your comments">
+                        <button type="submit" value="Submit" >Submit</button>
+                    </div>  
+                </div> <!-- /.form-group -->
+            </form>
+        </div>
+    
+
+    <section id="home-info" class="bg-dark">
+        <div class="info-image"></div>
+        <div class="info-content">
+            <h2><span class="primary-text">The History</span> of our Hotel</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus neque voluptates esse commodi. Velit
+                ea accusantium laboriosam? Eligendi praesentium libero recusandae. Voluptas ratione sequi cumque eveniet
+                ad nisi dolorum! Dolor!</p>
+            <a href="#about-info" class="btn btn-light">Read More</a>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="box bg-light">
+            <i class="fas fa-hotel fa-3x"></i>
+            <h3>Great Location</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, modi!</p>
+        </div>
+        <div class="box bg-primary">
+            <i class="fas fa-utensils fa-3x"></i>
+            <h3>Free Meals</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam harum unde quibusdam reiciendis a qui!</p>
+        </div>
+        <div class="box bg-light">
+            <i class="fas fa-dumbbell fa-3x"></i>
+            <h3>Fitness Area</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse fuga delectus, nesciunt veniam qui nulla.</p>
+        </div>
+    </section>
+
+
+    <!-- About -->
+
+    <section id="about-info" class="bg-light py-3">
+        <div class="container">
+            <div class="info-left">
+                <h1 class="l-heading"> <span class="primary-text">About</span> Hotel Name</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quam velit provident veniam numquam.
+                    Aspernatur, ab asperiores. Vero repellat dolor rerum, quaerat itaque voluptate adipisci velit
+                    nostrum dolorum. Deserunt blanditiis molestiae nemo reprehenderit expedita commodi aperiam ullam
+                    aspernatur consectetur possimus.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut excepturi quibusdam a? Ea, sapiente
+                    ullam.</p>
+            </div>
+            <div class="info-right">
+                <img loading="lazy" src="img/photo-2.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <div class="clr"></div>
+
+    <div id="testimonials" class="py-3">
+        <div class="container">
+            <h2 class="l-heading">What out Guests Say</h2>
+            <div class="testimonial bg-primary">
+                <img loading="lazy" src="img/person-2.jpg" alt="Samantha">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptatum magnam atque?
+                    Ipsax`similique quod sapiente, molestias animi error doloremque.</p>
+            </div>
+            <div class="testimonial bg-primary">
+                <img loading="lazy" src="img/person-1.jpg" alt="Jane">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, labore vitae repellendus magnam
+                    placeat nisi minus. Esse minus deserunt provident.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Contact Us -->
+    <section id="contact-form" class="py-3">
+        <div class="container">
+            <h2 class="l-heading"><span class="primary-text">Contact</span> Us</h2>
+            <p>Please fill the form to contact us</p>
+
+            <form action="process.php">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </section>
+    <section class="contact-info bg-dark">
+        <div class="container">
+            <div class="box">
+                <i class="fas fa-hotel fa-3x"></i>
+                <h3>Location</h3>
+                <p>432, Outer Circle, CP, New Delhi</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-phone fa-3x"></i>
+                <h3>Contact</h3>
+                <p>123-456-7890
+                </p>
+            </div>
+            <div class="box">
+                <i class="fas fa-envelope fa-3x"></i>
+                <h3>Email</h3>
+                <p>abc@xyz.com</p>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="clr"></div>
+    
+    <footer id="main-footer">
+        <p>Copyright &copy; 2020, All Rights Reserved</p>
+    </footer>
+
+    <!-- Options -->
+    <div id="button-call">
+        <span>
+            <i class="fas fa-phone fa-2x"></i>
+        </span>
+    </div>
+
+        <!-- chat box -->
+        <div class="chat-box">
+            <header>
+                <div style="display: flex; align-items: center;">
+                    <img src="./img/person-1.jpg" alt="avata">
+                    <span>
+                    <h5>Admin</h5>
+                        <span style="display: flex; align-items: center;">
+                            <span class="status"></span>
+                            <p>Đang hoạt động</p>
+                        </span>
+                    </span>
+                </div>
+                <span class="close-button" style="padding: 10px 10px;">
+                    <i class="fa-solid fa-xmark"></i>
+                </span>
+            </header>
+            <hr>
+            <main>
+                <div class="admin-message">
+                    <p>Xin chào. Bạn đang trò chuyện với admin</p>
+                    <p style="text-align: end;"></p>
+                </div>
+            </main>
+
+            <footer class="message-input">
+                <input type="text" placeholder="Typing here...">
+                <div>
+                    <span class="send-button">
+                        <i class="fa-solid fa-location-arrow"></i>
+                    </span>
+                </div>
+            </footer>
+        </div>
+
+        <div id="to-top">
+            <span>
+                <i class="fa-solid fa-up-long fa-xl"></i>
+            </span>
+        </div>    
+    <!-- js -->
+    <script src="./js/supportFunction.js"></script>
+    <script src="./js/scrollTop.js"></script>
+    <script src="./js/bookingFunction.js"></script>
+</body>
+
+</html>

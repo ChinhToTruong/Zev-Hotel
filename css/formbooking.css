@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7em;
+    position: relative;
+}
+
+
+.form-booking{
+    width: 100%;
+    height: 80%;
+    position: fixed;
+    background-color: #f4f4f4;
+    top: 100px;
+    z-index: 10;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-booking input{
+    width: 300px;
+    margin: 5px 0;
+    padding: 10px;
+}
+
+
+.form-booking h2{
+    font-size: 2rem;
+}
+
+.form-booking label {
+    font-size: 1.2rem;
+}
+
+.form-booking select {
+    font-size: 1rem;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.form-booking .controls {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: row-reverse;
+    
+}
+.form-booking .controls label {
+    padding: 0 10px;
+}
+
+.form-booking .comments input {
+    height: 60px;
+}
+
+.form-booking .comments button {
+    width: 100px;
+    height: 50px;
+}
+
+.close-form{
+    font-size: 2rem;
+    position:absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.close-form:hover{
+    cursor: pointer;
+}

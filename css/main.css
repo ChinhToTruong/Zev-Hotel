@@ -1,0 +1,493 @@
+/* Reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7em;
+    position: relative;
+
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+h1 , h2 , h3 {
+    padding-bottom: 20px;
+}
+
+p {
+    margin: 10px 0px;
+}
+
+/* Utlity classes */
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    overflow: auto;
+    padding: 40px 20px;
+}
+
+.primary-text {
+    color: #e8a925;
+}
+
+.lead-para {
+    font-size: 20px;
+}
+
+.btn {
+    color: #fff;
+    display: inline-block;
+    background: #222;
+    padding: 13px 20px;
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+}
+
+
+
+.btn:hover {
+    background-color: #222;
+    color: #cb4c3a;
+}
+
+.btn-light {
+    background: #fff;
+    color: #333;
+}
+
+.bg-dark {
+    background-color: #111;
+    color: #f4f4f4;
+}
+
+.bg-light {
+    background: #f4f4f4;
+    color: #333;
+}
+
+.bg-primary {
+    background: #cb4c3a;
+    color: #fff;
+}
+
+.clr {
+    clear: both;
+}
+
+.l-heading {
+    font-size: 30px;
+}
+
+.py-1 {padding: 10px 0;}
+.py-2 {padding: 20px 0;}
+.py-3 {padding: 30px 0;}
+
+
+/* Nav Bar */
+
+#nav-bar {
+    background: #111;
+    color: #fff;
+    overflow: auto;
+}
+
+#nav-bar a {
+    color: #fff;
+}
+
+#nav-bar .logo {
+    float: left;
+    padding-top: 20px;
+}
+
+#nav-bar ul {
+    float: right;
+    list-style: none;
+}
+
+#nav-bar ul li {
+    position: relative;
+    float: left;
+    
+}
+
+#nav-bar ul li a::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 80%;
+    height: 2px;
+    transform: translateX(20%);
+}
+
+#nav-bar ul li:hover a::before{
+    background-color: #fff;
+}
+
+#nav-bar ul li a {
+    display: block;
+    text-align: center;
+    padding: 20px;
+}
+
+#nav-bar ul li a:hover {
+    color: #cb4c3a;
+}
+
+
+
+/* Showcase */
+
+#showcase {
+    background: url('../img/khadeeja-yasser-msFZE7d9KB4-unsplash.jpg') no-repeat center center/cover;
+    height: 500px;
+    
+}
+
+#showcase .showcase-content {
+    color: #fff;
+    text-align: center;
+    padding-top: 170px;
+}
+
+#showcase .showcase-content h1 {
+    font-size: 60px;
+    line-height: 1.2em;
+}
+#showcase .showcase-content p {
+    padding-bottom: 20px;
+    line-height: 1.6em;}
+
+/* Home info */
+
+#home-info {
+    height: 500px;
+}
+
+#home-info .info-image {
+    float: left;
+    width: 50%;
+    background: url('../img/gondola-ride-1697076.jpg') no-repeat center center/cover;
+    min-height: 100%;
+}
+
+#home-info .info-content {
+    float: right;
+    width: 50%;
+    text-align: center;
+    height: 100%;
+    padding: 80px 30px;
+    overflow: hidden;
+}
+
+#home-info .info-content p {
+    padding-bottom: 30px;
+}
+
+/* Features */
+
+.box {
+    float: left;
+    width: 33.3%;
+    text-align: center;
+    padding: 50px;
+
+}
+
+.box i {
+    margin-bottom: 20px;
+}
+
+/* About */
+
+#about-info .info-right {
+    float: right;
+    width: 50%;
+    min-height: 100%;
+}
+
+#about-info .info-right img {
+    display: block;
+    width: 70%;
+    border-radius: 50%;
+    margin: auto;
+}
+
+
+#about-info .info-left {
+    float: left;
+    width: 50%;
+    min-height: 100%;
+}
+
+/* Testimonial */
+
+#testimonials {
+    height: 100%;
+    background: url('../img/test-bg.jpg') no-repeat center center/cover;
+    padding-top: 100px;
+}
+
+
+#testimonials h2{
+    color: #fff;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+#testimonials .testimonial{
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    opacity: 0.9;
+    overflow: auto;
+    
+}
+
+#testimonials .testimonial img {
+    width: 100px;
+    float: left;
+    margin-right: 20px;
+    border-radius: 50px;
+    
+    
+}
+
+/* contact us form */
+
+#contact-form {
+    margin-bottom: 20px;
+    
+}
+
+#contact-form label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea{
+
+    width:100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    outline: none;
+    border-color: #e8a925;
+}
+#contact-form textarea {
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+
+footer{
+    text-align: center;
+    background: #292929;
+    color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Options */
+
+@keyframes buttonCall {
+    0% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+    0%{
+        transform: scale(0.8);
+    }
+}
+
+
+@keyframes appear {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+
+#button-call{
+    width: 70px;
+    height: 70px;
+    background-color: rgb(191, 191, 195);
+    color: red;
+    border-radius: 50%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 50px;
+    right: 20px;
+    animation: buttonCall 1s ease-in-out infinite;
+}
+
+#button-call:hover{
+    cursor: pointer;
+}
+
+#to-top{
+    width: 70px;
+    height: 70px;
+    background-color: rgb(191, 191, 195);
+    color: green;
+    border-radius: 50%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 130px;
+    right: 20px;
+    animation: buttonCall 1s ease-in-out infinite;
+}
+#to-top:hover{
+    cursor: pointer;
+}   
+
+
+
+
+/* Chat box */
+.chat-box{
+    display: none;
+    height: 400px;
+    width: 300px;
+    background-color: #f4f4f4;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px 0   #888888 ;
+    animation: appear 0.3s ease-in-out;
+
+
+}
+
+.chat-box img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 20px 0 10px;
+}
+
+.chat-box header {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;  
+}
+
+.status {
+    height: 10px;
+    width: 10px;
+    background-color: greenyellow;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.chat-box header p {
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+.chat-box header span { 
+    font-size: 1.4rem;
+}
+.chat-box header span:hover {
+    cursor: pointer;
+}
+/* chat-box main */
+.chat-box main {
+    max-height: 250px;
+    overflow-y: scroll;
+    flex: 1;
+    padding: 5px 10px;
+}
+.my-message {
+    margin-left: 25%;
+    width: 75%;
+    background-color: darkturquoise;
+    border-radius: 5px;
+    padding: 0 5px;
+    color: #fff;
+}
+.admin-message {
+    margin-right: 25%;
+    width: 75%;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+
+/* chat-box footer */
+.chat-box footer {
+    background-color: #f4f4f4;
+    border-radius: 0 0 10px 10px;
+    padding: 5px 5px;
+    border-top: #454545 solid 1px ;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chat-box footer input {
+    width: 90%;
+    flex: 1;
+    border: none;
+    padding: 10px 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.chat-box footer input:focus{
+    outline: none;
+}
+
+.chat-box footer span {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+}
+.chat-box footer span:hover i {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.chat-box footer i {
+    color: #333;
+    font-size: 2rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+
